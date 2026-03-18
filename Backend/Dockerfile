@@ -10,7 +10,7 @@ RUN npm ci --omit=dev
 COPY src ./src
 
 ENV NODE_ENV=production
-ENV MONGO_URL="mongodb+srv://kislaykkwork_db_user:Googlechrome1@cluster0.p0fqmdh.mongodb.net/"
+ENV MONGO_URL="process.env.MONGO_URL"
 EXPOSE 5000
 
 USER node
